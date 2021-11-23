@@ -9,5 +9,15 @@
 
 .head-section {
   @include main-block;
-  height: 70vh;
+  height: 60vh;
+}
+
+.head-section_top-navbar {
+  @include main-block;
+  height: 21%;
+}
+
+.head-section_main-section {
+  @include main-block;
+  height: 79%;
 }
