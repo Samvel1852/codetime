@@ -3,7 +3,17 @@
 @mixin btn {
   background-color: $btn-bg-color;
   color: $btn-color;
-  border-radius: 20px;
+  border-radius: 15px;
+  border: 0;
+  font-size: $btn-font-size;
+  box-sizing: content-box;
+  padding: 0 2em 0 2em;
+}
+
+@mixin start-project-btn {
+  @include btn;
+  width: 49%;
+  height: 46%;
 }
 
 @mixin order-btn {
@@ -21,4 +31,9 @@
 @mixin main-block {
   background-color: $main-bg-color;
   width: 100%;
+}
+
+@mixin title {
+  color: $main-color;
+  font-size: $title-font-size;
 }
