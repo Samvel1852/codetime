@@ -1,4 +1,4 @@
-@import "./style.scss";
+@import "./variables.scss";
 
 @mixin btn {
   background-color: $btn-bg-color;
@@ -16,4 +16,9 @@
   @include btn;
   width: 329.53px;
   height: 99px;
+}
+
+@mixin main-block {
+  background-color: $main-bg-color;
+  width: 100%;
 }
