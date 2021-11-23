@@ -1,0 +1,19 @@
+@import "./style.scss";
+
+@mixin btn {
+  background-color: $btn-bg-color;
+  color: $btn-color;
+  border-radius: 20px;
+}
+
+@mixin order-btn {
+  @include btn;
+  width: 206.58px;
+  height: 62.06px;
+}
+
+@mixin application-submit-btn {
+  @include btn;
+  width: 329.53px;
+  height: 99px;
+}
