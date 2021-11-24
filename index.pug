@@ -5,6 +5,8 @@ html(lang="en")
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         link(rel="stylesheet", href="./CSS/style.css")
+        link(rel="stylesheet", href="./CSS/media.css")
+        script(src="./script.js" defer)
         title CodeTime
     body
         header(class="head-section")
@@ -28,6 +30,8 @@ html(lang="en")
             img(class="companies-logos-bar_img" src="./images/companies-logos.svg", alt="not found")
         main(class="main-section")
             section(class="main-section_service-types")
+                button(class="main-section_service-types_slide-btn main-section_service-types_slide-btn-prev" id="main-section_service-types_slide-btn-prev") <
+                button(class="main-section_service-types_slide-btn main-section_service-types_slide-btn-next" id="main-section_service-types_slide-btn-next") >
                 button(class="main-section_service-types_service-block")
                     img(class="main-section_service-types_service-block_img" src="./images/services-icons/interv.svg", alt="not found")
                     p(class="main-section_service-types_service-block-text") Проведём интервью

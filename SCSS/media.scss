@@ -1,0 +1,49 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+@media (max-width: $breakpoint-tablet) {
+  .head-section_main-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/head-main-sec.svg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position-x: -60px;
+    background-position-y: 70px;
+    padding: 0;
+    position: relative;
+    .head-section_main-section_project-development-container {
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      top: 0;
+      padding: 0;
+      .head-section_main-section_project-development-container_text {
+        font-weight: bold;
+      }
+      .head-section_main-section_project-development-container_btn {
+        width: 80px;
+        height: 30px;
+      }
+    }
+  }
+  .main-section_service-types {
+    position: relative;
+    .main-section_service-types_slide-btn {
+      display: inline-block;
+      position: absolute;
+    }
+    .main-section_service-types_slide-btn-prev {
+      left: 0;
+      top: 50%;
+    }
+    .main-section_service-types_slide-btn-next {
+      right: 0;
+      top: 50%;
+    }
+  }
+}
