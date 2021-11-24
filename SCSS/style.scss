@@ -149,20 +149,20 @@
     margin-top: 50px;
     @include main-block;
     .main-section_interview-submit_img-container {
-      width: 60%;
+      min-width: 320px;
       height: 100%;
       box-sizing: unset;
       .main-section_interview-submit_img-container_img {
-        width: 80%;
-        height: 70%;
+        width: 320px;
+        height: 320px;
         padding-left: 100px;
       }
     }
     .main-section_interview-submit_submit-section {
-      width: 40%;
+      min-width: 40%;
       height: 100%;
       box-sizing: unset;
-      padding: 100px 0 130px 0;
+      padding: 100px 0 130px 50px;
       .main-section_interview-submit_submit-section_title {
         @include title;
         margin-bottom: 15px;
@@ -173,8 +173,8 @@
       }
       .main-section_interview-submit_submit-section_btn {
         @include btn;
-        width: 30%;
-        height: 6%;
+        width: 100px;
+        height: 30px;
       }
     }
   }
@@ -206,8 +206,8 @@
     .main-section_products-container_product-box_bg-line {
       position: absolute;
       width: 100%;
-      height: 50%;
-      top: 25%;
+      height: 40%;
+      top: 35%;
       left: 0;
       background-color: $main-color;
       overflow-x: hidden;
@@ -215,13 +215,44 @@
 
     .main-section_products-container_product-box_product {
       position: relative;
-      width: 60%;
-      height: 70%;
+      width: 70%;
+      height: 80%;
       background: linear-gradient(180deg, #ffffff 0%, #f7f9fd 100%);
       box-shadow: 0px 5px 10px 0px #1e959b80;
       border-radius: 30px;
       display: flex;
+      flex-direction: column;
       align-items: center;
+      padding-top: 55px;
+      text-align: center;
+      .main-section_products-container_product-box_product_text {
+        color: $main-color;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      .main-section_products-container_product-box_product_btn {
+        @include btn;
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        bottom: 20px;
+      }
+      .main-section_products-container_product-box_product_circle {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        height: 80px;
+        width: 80px;
+        background-color: $main-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main-section_products-container_product-box_product_circle_icon {
+          width: 50%;
+          height: 50%;
+        }
+      }
     }
     .main-section_products-container_product:empty {
       background-color: $main-color;
@@ -243,6 +274,86 @@
       @include btn;
       width: 23%;
       height: 50px;
+    }
+  }
+}
+
+.bottom-footer {
+  @include main-block;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-bg-color;
+  .bottom-footer_main-content {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .bottom-footer_main-content_block1 {
+      min-width: 40px;
+    }
+
+    .bottom-footer_main-content_block {
+      height: 100%;
+      padding-left: 30px;
+      .bottom-footer_main-content_block_img {
+        width: 10vw;
+        height: 100%;
+      }
+      .bottom-footer_main-content_block_text {
+        font-size: $footer-text-font-size;
+        color: #3aa2a7;
+      }
+    }
+    .bottom-footer_main-content_block2 {
+      min-width: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 10px;
+    }
+    .bottom-footer_main-content_block3 {
+      min-width: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 10px;
+      align-items: center;
+      .bottom-footer_main-content_block_tel-img {
+        height: 20%;
+      }
+
+      .bottom-footer_main-content_block3_text {
+        padding-left: 13px;
+      }
+    }
+    .bottom-footer_main-content_block4 {
+      display: flex;
+      align-items: center;
+      min-width: 70px;
+      .bottom-footer_main-content_block4_img_icons {
+        width: 30px;
+        height: 30px;
+      }
+      .bottom-footer_main-content_block4_img_paper {
+        width: 60px;
+        height: 60px;
+      }
+      .bottom-footer_main-content_block4_text {
+        font-size: 9px;
+      }
+    }
+  }
+  .bottom-footer_bottom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bottom-footer_bottom-content_text {
+      text-align: center;
+      color: rgba(60, 60, 60, 0.5);
     }
   }
 }
